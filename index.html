@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Екатерина Жуковская - Web Designer & UI/UX Creator</title>
+    <script>document.documentElement.classList.add('js')</script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Unbounded:wght@700;900&family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Caveat:wght@600&display=swap" rel="stylesheet">
+</head>
+<body id="top">
+    <div class="s-progress" id="progress"></div>
+
+    <header class="site-header" id="site-header">
+        <a href="#top" class="logo">E.ZH</a>
+        <nav class="main-nav">
+            <a href="#top">Главная</a>
+            <a href="#about">Обо мне</a>
+            <a href="#achievements">Достижения</a>
+            <a href="#contact">Контакты</a>
+        </nav>
+        <div class="header-right">
+            <span class="status-tag">AVAILABLE FOR FREELANCE</span>
+            <span class="status-dot"></span>
+        </div>
+    </header>
+
+    <!-- =========================================================
+         СЕКЦИЯ 1: HERO
+         ========================================================= -->
+    <main class="hero">
+        <div class="bg-text" aria-hidden="true">
+            <svg viewBox="0 0 1000 260" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                <text x="0" y="250" textLength="1000" lengthAdjust="spacingAndGlyphs">DESIGNER</text>
+            </svg>
+        </div>
+
+        <div class="portrait-container">
+            <!-- ФОТО ГЛАВНОЕ: портрет без фона (PNG), файл sticker.jpg -->
+            <img src="sticker.jpg" alt="Екатерина Жуковская" class="portrait-img" id="main-portrait">
+        </div>
+
+        <div class="hero-content">
+            <p class="greeting">Привет, я</p>
+            <h1 class="hero-title" id="main-name">ЕКАТЕРИНА<br>ЖУКОВСКАЯ</h1>
+            <p class="hero-role">WEB DESIGNER & UI/UX CREATOR</p>
+            <p class="hero-desc">
+                Создаю современный дизайн, сочетая эстетику, продуманный UX и внимание к деталям.
+            </p>
+            <div class="bottom-actions">
+                <a href="#contact" class="cta-btn">Связаться со мной</a>
+            </div>
+        </div>
+
+        <div class="hero-stats">
+            <div class="stat-item">
+                <span class="stat-number">3+</span>
+                <span class="stat-label">ГОДА<br>ОПЫТА</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">50+</span>
+                <span class="stat-label">ПРОЕКТОВ<br>ЗАВЕРШЕНО</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">25+</span>
+                <span class="stat-label">СЧАСТЛИВЫХ<br>КЛИЕНТОВ</span>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- БЕГУЩАЯ СТРОКА -->
+    <div class="s-marquee" aria-hidden="true">
+        <div class="s-marquee-track">
+            <span>UI/UX ★ WEB DESIGN ★ BRANDING ★ FIGMA ★ UI/UX ★ WEB DESIGN ★ BRANDING ★ FIGMA ★ </span>
+            <span>UI/UX ★ WEB DESIGN ★ BRANDING ★ FIGMA ★ UI/UX ★ WEB DESIGN ★ BRANDING ★ FIGMA ★ </span>
+        </div>
+    </div>
+
+    <!-- =========================================================
+         СЕКЦИЯ 2: ДАВАЙ ЗНАКОМИТЬСЯ
+         ========================================================= -->
+    <section class="s-about" id="about">
+        <span class="s-star st1" aria-hidden="true">✦</span>
+        <span class="s-star st2" aria-hidden="true">✦</span>
+        <span class="s-star st3" aria-hidden="true">★</span>
+        <!-- Вращающийся штамп -->
+        <svg class="s-stamp" viewBox="0 0 200 200" aria-hidden="true">
+            <defs><path id="circ" d="M100,100 m-72,0 a72,72 0 1,1 144,0 a72,72 0 1,1 -144,0"/></defs>
+            <text><textPath href="#circ" textLength="440" lengthAdjust="spacing">DESIGN ★ WITH ★ ATTITUDE ★</textPath></text>
+            <text x="100" y="118" text-anchor="middle" class="stamp-core">✦</text>
+        </svg>
+        <div class="s-container">
+            <h2 class="s-big-title reveal">ДАВАЙ<br>ЗНАКОМИТЬСЯ</h2>
+
+            <div class="s-about-grid">
+                <div class="s-photos">
+                    <div class="s-vinyl" aria-hidden="true"></div>
+                    <figure class="s-polaroid s-pol-1 reveal">
+                        <span class="s-tape"></span>
+                        <!-- ФОТО 1: детское фото, вертикальное, ~600×750 px. Назови файл child.jpg -->
+                        <img src="ekat1.jpg" alt="Маленькая Екатерина">
+                        <figcaption>рисовала на обоях и резала мамины журналы</figcaption>
+                    </figure>
+                    <figure class="s-polaroid s-pol-2 reveal" style="--d:.25s">
+                        <span class="s-tape"></span>
+                        <!-- ФОТО 2: фото сейчас, вертикальное, ~600×750 px. Назови файл now.jpg -->
+                        <img src="ekat_now.jpg" alt="Екатерина сейчас">
+                        <figcaption>теперь рисую в Figma</figcaption>
+                    </figure>
+                </div>
+
+                <div class="s-about-text reveal" style="--d:.15s">
+                    <p class="s-lead">Меня зовут Екатерина. Я делаю сайты, на которые невозможно не посмотреть.</p>
+                    <p>В детстве я рисовала фломастерами на обоях. Сейчас — в Figma, а мои «обои» открывают тысячи людей каждый день.</p>
+                    <p>Мой стиль — высокая мода плюс жёсткая бизнес-логика. Красивый сайт — это инструмент, который приводит клиентов.</p>
+                    <ul class="s-tags">
+                        <li>Figma</li><li>UI/UX</li><li>Брендинг</li><li>Лендинги</li><li>Прототипы</li>
+                    </ul>
+                    <a href="#achievements" class="s-btn s-btn-dark">Смотреть работы</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+     НОВЫЙ БЛОК «МОЙ ПУТЬ» (таймлайн)
+     Вставь ЦЕЛИКОМ после секции «Давай знакомиться» (после её </section>)
+     и перед блоком «КАК Я РАБОТАЮ»
+     ============================================================ -->
+    <section class="s-path" id="path">
+        <span class="s-star st13" aria-hidden="true">✦</span>
+        <span class="s-star st14" aria-hidden="true">★</span>
+        <div class="s-container">
+            <h2 class="s-big-title s-title-dark reveal">МОЙ <span class="s-outline">ПУТЬ</span></h2>
+
+            <div class="s-timeline">
+                <div class="s-tl-item reveal">
+                    <div class="s-tl-card">
+                        <div class="s-tl-year">2021</div>
+                        <h3>Старт</h3>
+                        <p>Прошла курс Art Direction и нарисовала первые макеты сайтов для друзей. Именно тогда поняла, что дизайн — это моё.</p>
+                    </div>
+                    <div class="s-tl-node" aria-hidden="true">✦</div>
+                    <div class="s-tl-spacer"></div>
+                </div>
+
+                <div class="s-tl-item reveal">
+                    <div class="s-tl-card">
+                        <div class="s-tl-year">2022</div>
+                        <h3>Первые клиенты</h3>
+                        <p>Закончила Web Design Pro. Появились первые заказы, среди них редизайн Fashion Store.</p>
+                    </div>
+                    <div class="s-tl-node" aria-hidden="true">✦</div>
+                    <div class="s-tl-spacer"></div>
+                </div>
+
+                <div class="s-tl-item reveal">
+                    <div class="s-tl-card">
+                        <div class="s-tl-year">2023</div>
+                        <h3>Уровень UI/UX</h3>
+                        <p>Получила сертификат UI/UX. Запустила Aura Beauty и приложение Daily Planner.</p>
+                    </div>
+                    <div class="s-tl-node" aria-hidden="true">✦</div>
+                    <div class="s-tl-spacer"></div>
+                </div>
+
+                <div class="s-tl-item reveal">
+                    <div class="s-tl-card">
+                        <div class="s-tl-year">2024</div>
+                        <h3>25+ клиентов</h3>
+                        <p>Собрала постоянных клиентов, выстроила свой процесс работы и фирменный стиль в дизайне.</p>
+                    </div>
+                    <div class="s-tl-node" aria-hidden="true">✦</div>
+                    <div class="s-tl-spacer"></div>
+                </div>
+
+                <div class="s-tl-item s-tl-now reveal">
+                    <div class="s-tl-card">
+                        <div class="s-tl-year">СЕЙЧАС</div>
+                        <h3>50+ проектов</h3>
+                        <p>Продолжаю учиться, пробую новое и беру проекты, от которых горят глаза. Следующий, возможно, твой.</p>
+                    </div>
+                    <div class="s-tl-node" aria-hidden="true">★</div>
+                    <div class="s-tl-spacer"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ============================================================
+     НОВЫЙ БЛОК «КАК Я РАБОТАЮ»
+    
+     ============================================================ -->
+    <section class="s-process" id="process">
+        <span class="s-star st7" aria-hidden="true">✦</span>
+        <span class="s-star st8" aria-hidden="true">★</span>
+        <div class="s-sticker" aria-hidden="true">ПЕРВЫЙ<br>СОЗВОН<br>БЕСПЛАТНО</div>
+
+        <div class="s-container">
+            <h2 class="s-big-title reveal">КАК Я <span class="s-outline">РАБОТАЮ</span></h2>
+
+            <div class="s-steps">
+                <article class="s-step reveal">
+                    <div class="s-step-num">01</div>
+                    <h3>Знакомство</h3>
+                    <p>Созвон на 30 минут: разбираем цели, аудиторию и сайты, которые вам нравятся.</p>
+                </article>
+                <article class="s-step reveal" style="--d:.15s">
+                    <div class="s-step-num">02</div>
+                    <h3>Концепт</h3>
+                    <p>Собираю мудборд, подбираю шрифты и палитру, показываю 2–3 направления на выбор.</p>
+                </article>
+                <article class="s-step reveal" style="--d:.3s">
+                    <div class="s-step-num">03</div>
+                    <h3>Дизайн</h3>
+                    <p>Рисую интерфейс в Figma для десктопа, планшета и телефона. Делаю кликабельный прототип.</p>
+                </article>
+                <article class="s-step reveal" style="--d:.45s">
+                    <div class="s-step-num">04</div>
+                    <h3>Запуск</h3>
+                    <p>Передаю макеты разработчику, слежу за вёрсткой и помогаю выпустить сайт.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================================
+         СЕКЦИЯ 3: МОИ ДОСТИЖЕНИЯ (карточки на Flexbox)
+         ========================================================= -->
+    <section class="s-ach" id="achievements">
+        <span class="s-star st4" aria-hidden="true">✦</span>
+        <span class="s-star st5" aria-hidden="true">★</span>
+        <div class="s-container">
+            <h2 class="s-big-title s-title-dark reveal">МОИ <span class="s-outline">ДОСТИЖЕНИЯ</span></h2>
+
+            <div class="s-cards">
+                <article class="s-card reveal" style="--d:0.00s" tabindex="0" aria-label="Fashion Store Redesign">
+                    <div class="s-card-inner">
+                        <div class="s-front">
+                            <span class="s-pin"></span>
+                            <div class="s-card-img">
+                                <!-- ФОТО 3: скриншот/обложка проекта, ~800×600 px. Файл ach-1.jpg -->
+                                <img src="fash.jpg" alt="Fashion Store Redesign">
+            
+                            </div>
+                            <div class="s-card-body">
+                                <h3>Fashion Store Redesign</h3>
+                                <p>Переделала интерфейс магазина одежды: больше покупок, меньше отказов.</p>
+                                <button type="button" class="s-btn s-flip">Подробнее</button>
+                            </div>
+                        </div>
+                        <div class="s-back">
+                            <h3>Fashion Store Redesign</h3>
+                            <dl>
+                                <dt>Задача</dt><dd>Устаревший дизайн, высокий процент отказов и сложная навигация.</dd>
+                                <dt>Решение</dt><dd>Чистый минималистичный интерфейс, крупная типографика, интуитивный поиск и простая корзина.</dd>
+                                <dt>Результат</dt><dd>Конверсия в покупку выросла на 34%, отказы сократились вдвое.</dd>
+                            </dl>
+                            <button type="button" class="s-btn s-flip">Назад</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="s-card reveal" style="--d:0.15s" tabindex="0" aria-label=" Beauty">
+                    <div class="s-card-inner">
+                        <div class="s-front">
+                            <span class="s-pin"></span>
+                            <div class="s-card-img">
+                                <!-- ФОТО 4: скриншот/обложка проекта, ~800×600 px. Файл ach-2.jpg -->
+                                <img src="buti.jpg" alt=" Beauty">
+                                
+                            </div>
+                            <div class="s-card-body">
+                                <h3>Aura Beauty</h3>
+                                <p>Лендинг для запуска новой линейки косметики.</p>
+                                <button type="button" class="s-btn s-flip">Подробнее</button>
+                            </div>
+                        </div>
+                        <div class="s-back">
+                            <h3>Aura Beauty</h3>
+                            <dl>
+                                <dt>Задача</dt><dd>Запуск косметики: сайт должен мгновенно передавать премиальность бренда.</dd>
+                                <dt>Решение</dt><dd>Иммерсивный лендинг с плавными анимациями, глубокими цветами и акцентом на продукт.</dd>
+                                <dt>Результат</dt><dd>Первая партия распродана за 48 часов.</dd>
+                            </dl>
+                            <button type="button" class="s-btn s-flip">Назад</button>
+                        </div>
+                    </div>
+                </article>
+
+                                <article class="s-card reveal" style="--d:0.30s" tabindex="0" aria-label="Daily Planner App">
+                    <div class="s-card-inner">
+                        <div class="s-front">
+                            <span class="s-pin"></span>
+                            <div class="s-card-img">
+                                <!-- ФОТО 5: скриншот/обложка проекта, ~800×600 px. Файл ach-3.jpg -->
+                                <img src="dali.jpg" alt="Daily Planner App">
+                                
+                            </div>
+                            <div class="s-card-body">
+                                <h3>Daily Planner App</h3>
+                                <p>Дизайн приложения для отслеживания планов на день и управления задачами.</p>
+                                <button type="button" class="s-btn s-flip">Подробнее</button>
+                            </div>
+                        </div>
+                        <div class="s-back">
+                            <h3>Daily Planner App</h3>
+                            <dl>
+                                <dt>Задача</dt><dd>Пользователи терялись в сложных списках задач и забывали о важных делах.</dd>
+                                <dt>Решение</dt><dd>Создала интуитивный интерфейс с виджетами, таймлайном и умными напоминаниями.</dd>
+                                <dt>Результат</dt><dd>Вовлеченность выросла на 40%, пользователи стали выполнять на 30% больше задач.</dd>
+                            </dl>
+                            <button type="button" class="s-btn s-flip">Назад</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Сертификаты -->
+            <div class="s-certs">
+                <div class="s-cert reveal">
+                    <!-- ФОТО 6: фото сертификата, ~500×350 px. Файл cert-1.jpg -->
+                    <img src="UXUI.jpg" alt="Сертификат UI/UX"><b>CERTIFIED UI/UX · 2023</b>
+                </div>
+                <div class="s-cert reveal">
+                    <!-- ФОТО 7: фото сертификата. Файл cert-2.jpg -->
+                    <img src="ser2.jpg" alt="Сертификат Web Design"><b>WEB DESIGN PRO · 2022</b>
+                </div>
+                <div class="s-cert reveal">
+                    <!-- ФОТО 8: фото сертификата. Файл cert-3.jpg -->
+                    <img src="ser3.jpg" alt="Сертификат Art Direction"><b>ART DIRECTION · 2021</b>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ============================================================
+     НОВЫЙ БЛОК «ОТЗЫВЫ»
+     Вставь ЦЕЛИКОМ между секцией achievements (после её </section>)
+     и секцией контактов (перед комментарием «СЕКЦИЯ 4»)
+     ============================================================ -->
+    <section class="s-reviews" id="reviews">
+        <span class="s-star st9" aria-hidden="true">✦</span>
+        <span class="s-star st10" aria-hidden="true">★</span>
+        <div class="s-rating-badge" aria-hidden="true">5.0<small>★ СРЕДНЯЯ<br>ОЦЕНКА</small></div>
+
+        <div class="s-container">
+            <h2 class="s-big-title reveal">ЧТО ГОВОРЯТ<br><span class="s-outline-dark">КЛИЕНТЫ</span></h2>
+
+            <div class="s-reviews-row">
+                <article class="s-review-card reveal" style="--d:0.00s; --rot:-2.5deg">
+                    <div class="s-review">
+                        <span class="s-clip" aria-hidden="true"></span>
+                        <div class="s-quote" aria-hidden="true">“</div>
+                        <div class="s-rating" aria-label="5 из 5">★★★★★</div>
+                        <p>Екатерина не просто дизайнер, а стратег. Она чувствует бренд и заставляет сайт дышать. Мы получили не картинку, а инструмент, который приносит деньги.</p>
+                        <div class="s-author">
+                            <!-- АВАТАР: силуэт нарисован кодом, фото не нужно -->
+                            <svg class="s-avatar" viewBox="0 0 64 64" aria-hidden="true"><path d="M19 28c0-9 6-15 13-15s13 6 13 15v14H19z"/><circle cx="32" cy="26" r="11"/><path d="M10 64c0-15 9-22 22-22s22 7 22 22z"/></svg>
+                            <div><strong>Анна Смирнова</strong><span>Основатель бренда одежды</span></div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="s-review-card reveal" style="--d:0.15s; --rot:1.5deg">
+                    <div class="s-review">
+                        <span class="s-clip" aria-hidden="true"></span>
+                        <div class="s-quote" aria-hidden="true">“</div>
+                        <div class="s-rating" aria-label="5 из 5">★★★★★</div>
+                        <p>Самый крутой вайб в работе. Дедлайны соблюдены, каждый пиксель на месте. Я впервые не переделывал макеты, а просто нажал «согласовать».</p>
+                        <div class="s-author">
+                            <!-- АВАТАР: силуэт нарисован кодом, фото не нужно -->
+                            <svg class="s-avatar" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="26" r="11"/><path d="M10 64c0-15 9-22 22-22s22 7 22 22z"/></svg>
+                            <div><strong>Дмитрий К.</strong><span>CEO digital-агентства</span></div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="s-review-card reveal" style="--d:0.30s; --rot:-1.2deg">
+                    <div class="s-review">
+                        <span class="s-clip" aria-hidden="true"></span>
+                        <div class="s-quote" aria-hidden="true">“</div>
+                        <div class="s-rating" aria-label="5 из 5">★★★★★</div>
+                        <p>Работать с Екатериной легко. Она быстро поняла наши боли и предложила решение, о котором мы даже не думали. Продажи выросли, а нервы в порядке.</p>
+                        <div class="s-author">
+                            <!-- АВАТАР: силуэт нарисован кодом, фото не нужно -->
+                            <svg class="s-avatar" viewBox="0 0 64 64" aria-hidden="true"><path d="M20 22c0-7 5-11 12-11s12 4 12 11v12H20z"/><circle cx="32" cy="26" r="11"/><path d="M10 64c0-15 9-22 22-22s22 7 22 22z"/></svg>
+                            <div><strong>Марина В.</strong><span>Маркетинг-директор</span></div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <!-- ============================================================
+     БЛОК «МОЙ АРСЕНАЛ» (новая версия, без процентов)
+     Замени им прежний блок «Мой арсенал» целиком
+     (от <section class="s-skills"> до его </section>)
+     ============================================================ -->
+    <section class="s-skills" id="skills">
+        <span class="s-star st11" aria-hidden="true">✦</span>
+        <span class="s-star st12" aria-hidden="true">★</span>
+        <div class="s-container">
+            <h2 class="s-big-title s-title-dark reveal">МОЙ <span class="s-outline">АРСЕНАЛ</span></h2>
+
+            <ul class="s-sk-list">
+                <li class="s-sk-row reveal" style="--d:0.00s">
+                    <span class="s-sk-num">01</span>
+                    <h3>UI-дизайн</h3>
+                    <p>Интерфейсы, которые хочется трогать: сетки, типографика, цвет.</p>
+                    <span class="s-sk-arrow" aria-hidden="true">➜</span>
+                </li>
+                <li class="s-sk-row reveal" style="--d:0.08s">
+                    <span class="s-sk-num">02</span>
+                    <h3>UX-исследования</h3>
+                    <p>Интервью, user flow и карты пути, чтобы сайт был понятным.</p>
+                    <span class="s-sk-arrow" aria-hidden="true">➜</span>
+                </li>
+                <li class="s-sk-row reveal" style="--d:0.16s">
+                    <span class="s-sk-num">03</span>
+                    <h3>Прототипирование</h3>
+                    <p>Кликабельные макеты в Figma, которые можно проверить до разработки.</p>
+                    <span class="s-sk-arrow" aria-hidden="true">➜</span>
+                </li>
+                <li class="s-sk-row reveal" style="--d:0.24s">
+                    <span class="s-sk-num">04</span>
+                    <h3>Брендинг</h3>
+                    <p>Фирменный стиль: логотип, палитра, шрифты и характер бренда.</p>
+                    <span class="s-sk-arrow" aria-hidden="true">➜</span>
+                </li>
+                <li class="s-sk-row reveal" style="--d:0.32s">
+                    <span class="s-sk-num">05</span>
+                    <h3>Анимации</h3>
+                    <p>Микровзаимодействия и плавные переходы, которые оживляют страницу.</p>
+                    <span class="s-sk-arrow" aria-hidden="true">➜</span>
+                </li>
+                <li class="s-sk-row reveal" style="--d:0.40s">
+                    <span class="s-sk-num">06</span>
+                    <h3>Вёрстка</h3>
+                    <p>Собираю лендинги на HTML/CSS и Tilda, говорю с разработчиками на одном языке.</p>
+                    <span class="s-sk-arrow" aria-hidden="true">➜</span>
+                </li>
+            </ul>
+
+            <h3 class="s-col-title reveal">Инструменты</h3>
+            <ul class="s-tools reveal"><li class="hot" style="--r:-4deg">Figma</li><li class="" style="--r:3deg">Photoshop</li><li class="" style="--r:-2deg">Illustrator</li><li class="" style="--r:5deg">Tilda</li><li class="" style="--r:-5deg">Webflow</li><li class="" style="--r:2deg">Notion</li><li class="" style="--r:-3deg">Miro</li><li class="" style="--r:4deg">After Effects</li><li class="" style="--r:-1deg">Protopie</li><li class="hot" style="--r:3deg">Framer</li></ul>
+        </div>
+    </section>
+    <!-- ============================================================
+     НОВЫЙ БЛОК «ЧАСТЫЕ ВОПРОСЫ» (FAQ)
+     Вставь ЦЕЛИКОМ перед секцией контактов
+     (перед комментарием «СЕКЦИЯ 4: КОНТАКТЫ»)
+     ============================================================ -->
+    <section class="s-faq" id="faq">
+        <span class="s-star st15" aria-hidden="true">✦</span>
+        <span class="s-star st16" aria-hidden="true">★</span>
+        <div class="s-faq-mark" aria-hidden="true">?</div>
+        <div class="s-container">
+            <h2 class="s-big-title reveal">ЧАСТЫЕ<br>ВОПРОСЫ</h2>
+
+            <div class="s-faq-list">
+                <details class="s-faq-item reveal" style="--d:0.00s" open>
+                    <summary>Сколько длится работа над сайтом?</summary>
+                    <div class="s-faq-body"><p>Лендинг обычно занимает 1–2 недели, сайт на несколько страниц 3–4 недели, мобильное приложение 5–8 недель. Точный срок называю после знакомства, когда понятен объём.</p></div>
+                </details>
+
+                <details class="s-faq-item reveal" style="--d:0.08s">
+                    <summary>Что нужно от меня для старта?</summary>
+                    <div class="s-faq-body"><p>Рассказать о проекте и целях, показать сайты, которые нравятся, и прислать логотип и материалы, если они есть. Всё остальное я соберу сама.</p></div>
+                </details>
+
+                <details class="s-faq-item reveal" style="--d:0.16s">
+                    <summary>Сколько правок включено?</summary>
+                    <div class="s-faq-body"><p>До трёх кругов правок на каждом этапе. Этого хватает, чтобы результат точно попал в цель и никто не устал.</p></div>
+                </details>
+
+                <details class="s-faq-item reveal" style="--d:0.24s">
+                    <summary>Делаете ли вы вёрстку и разработку?</summary>
+                    <div class="s-faq-body"><p>Я рисую дизайн и аккуратно передаю макеты разработчику. Простые лендинги могу собрать на Tilda, а для сложных проектов помогу найти надёжную команду.</p></div>
+                </details>
+
+                <details class="s-faq-item reveal" style="--d:0.32s">
+                    <summary>Как проходит оплата?</summary>
+                    <div class="s-faq-body"><p>Предоплата перед стартом, остальное после утверждения макетов. Все условия фиксируем в договоре, чтобы было спокойно обеим сторонам.</p></div>
+                </details>
+
+                <details class="s-faq-item reveal" style="--d:0.40s">
+                    <summary>Работаете ли вы удалённо?</summary>
+                    <div class="s-faq-body"><p>Да, я работаю дистанционно с клиентами из любой страны. Созваниваемся в Zoom или Telegram и держим связь в удобном вам мессенджере.</p></div>
+                </details>
+            </div>
+
+            <div class="s-faq-more reveal">
+                <p>Не нашли ответ? Напишите мне, всё объясню.</p>
+                <a href="#contact" class="s-btn s-btn-dark">Задать вопрос</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================================
+         СЕКЦИЯ 4: КОНТАКТЫ
+         ========================================================= -->
+    <section class="s-contact" id="contact">
+        <div class="s-container">
+            <span class="s-star st6" aria-hidden="true">✦</span>
+            <h2 class="s-huge reveal">LET’S WORK<br><span>TOGETHER</span></h2>
+            <p class="s-contact-text reveal">Есть проект? Напиши мне — отвечу в течение дня.</p>
+            <div class="s-contact-links reveal">
+                <a href="mailto:hello@example.com" class="s-btn">hello@example.com</a>
+                <a href="https://t.me/" class="s-btn s-btn-ghost">Telegram</a>
+                <a href="https://www.instagram.com/__stitch_k?dlrf=MXB5M2ExbnZodTR0cg%3D%3D&utm_source=qr" class="s-btn s-btn-ghost">Instagram</a>
+            </div>
+        </div>
+    </section>
+
+    <a href="#top" class="s-top" id="to-top" aria-label="Наверх">↑</a>
+
+    <script>
+    // Плавное появление
+    const io = new IntersectionObserver(es => es.forEach(e => {
+        if (e.isIntersecting) {
+            e.target.classList.add('in');
+            io.unobserve(e.target);
+            setTimeout(() => e.target.classList.remove('reveal', 'in'), 2000);
+        }
+    }), { threshold: 0.15 });
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+    // Переворот карточек
+    document.querySelectorAll('.s-card').forEach(card => {
+        card.querySelectorAll('.s-flip').forEach(b => b.addEventListener('click', e => {
+            e.stopPropagation(); card.classList.toggle('flipped');
+        }));
+    });
+
+    // Шапка, кнопка «наверх», полоса прокрутки
+    const hdr = document.getElementById('site-header'), topBtn = document.getElementById('to-top'), bar = document.getElementById('progress');
+    addEventListener('scroll', () => {
+        const y = scrollY;
+        hdr.classList.toggle('scrolled', y > 40);
+        topBtn.classList.toggle('show', y > 600);
+        bar.style.width = (y / (document.documentElement.scrollHeight - innerHeight) * 100) + '%';
+    }, { passive: true });
+    </script>
+</body>
+</html>
